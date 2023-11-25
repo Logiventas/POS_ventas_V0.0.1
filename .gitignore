@@ -1,0 +1,59 @@
+# Archivos temporales o creados por el sistema
+*~
+.DS_Store
+
+# Directorios generados por IDEs
+.idea/
+.vscode/
+
+# Archivos de construcción
+build/
+bin/
+out/
+
+# Dependencias y archivos generados por Node.js
+node_modules/
+npm-debug.log
+
+# Entorno virtual de Python
+venv/
+
+# Archivos de compilación Java
+*.class
+*.jar
+*.war
+
+# Archivos de compilación .NET
+bin/
+obj/
+
+# Archivos de registros y datos generados
+*.log
+*.sql
+*.sqlite
+
+# Archivos de configuración de sistema
+Thumbs.db
+Desktop.ini
+
+# Archivos de configuración de IDEs
+*.iml
+*.ipr
+*.iws
+
+# Entorno de desarrollo para Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Entorno de desarrollo para Java
+*.class
+
+# Entorno de desarrollo para Ruby
+*.gem
+*.rbc
+.bundle/
+
+# Entorno de desarrollo para PHP
+composer.phar
+/vendor/
