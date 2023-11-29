@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="public/style.css">
+    <title>Registro de Ventas</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-perfil nav-left">
+        <span class="perfil-icon">icon</span>
+        <span class="perfil-name">Nombre</span>
+      </div>
+      <div class="nav-perfil nav-right">
+        <span class="perfil-sesion">cerrar</span>
+        <span class="perfil-notificaction">notificacion</span>
+      </div>
+    </nav>
+    <main>
+      <section>
+        <div>
+          <input type="text">
+          <input type="submit" value="Agregar">
+        </div>
+        <div>
+          <div class="tabs">
+            <div class="tab-container">
+              <div id="tab3" class="tab"> 
+                <a href="#tab3">Pestaña 3</a>
+                <div class="tab-content">
+                  <table>
+                    <thead>
+                        <tr>
+                          <th>ID_Producto</th>
+                          <th>Nombre</th>
+                          <th>Precio Uni</th>
+                          <th>can</th>
+                          <th>Uni</th>
+                          <th>Descuento</th>
+                          <th>Total</th>
+                          <th>Img_Producto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>ID_Producto</th>
+                        <th>Nombre</th>
+                        <th>Precio Uni</th>
+                        <th>can</th>
+                        <th>Uni</th>
+                        <th>Descuento</th>
+                        <th>Total</th>
+                        <th><img src="" alt=""></th>
+                      </tr>
+                      <tr>
+                        <th>ID_Producto</th>
+                        <th>Nombre</th>
+                        <th>Precio Uni</th>
+                        <th>can</th>
+                        <th>Uni</th>
+                        <th>Descuento</th>
+                        <th>Total</th>
+                        <th><img src="" alt=""></th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div id="tab2" class="tab">
+                <a href="#tab2">Pestaña 2</a>
+                <div class="tab-content">
+                  <h2>Titulo 2</h2>
+                  <p>Lorem ipsum ...</p>
+                </div>
+              </div> 
+              <div id="tab1" class="tab">
+                <a href="#tab1">Pestaña 1</a>
+                <div class="tab-content">
+                  <h2>Titulo 1</h2>
+                  <p>Lorem ipsum ...</p>
+                </div> 
+              </div> 
+            </div>
+          </div>
+        </div>
+        <div>
+            <div>
+              <button>Ultimas Ventas</button>
+              <button>Imprimir Ultima Factura</button>
+            </div>
+            <div>
+              <button>Cancelar Venta</button>
+              <button>Cobrar</button>
+              <div>
+                <table>
+                  <tr>
+                    <td>Subtotal <span>$</span> </td>
+                    <td><span>2221211</span></td>
+                  </tr>
+                  <tr>
+                    <td>Descuento Total <span>$</span> </td>
+                    <td><span>2221211</span></td>
+                  </tr>
+                  <tr>
+                    <td>Total final<span>$</span> </td>
+                    <td><span>2221211</span></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+        </div>
+      </section>
+      <aside class="panel-left" style="overflow-y: auto; max-height: 300px;">
+        <div class="panel-left-categorias">
+            <ul>
+                <li><button>Categoría 1</button></li>
+                <li><button>Categoría 2</button></li>
+                <li><button>Categoría 3</button></li>
+                <li><button>Categoría 3</button></li>
+                <li><button>Categoría 3</button></li>
+            </ul>
+        </div>
+        <div class="panel-left-productos">
+            <ul>
+                <li><button>Producto 1</button></li>
+                <li><button>Producto 2</button></li>
+                <li><button>Producto 3</button></li>
+            </ul>
+        </div>
+    </aside>
+    
+    </main>
+    <footer>
+      <nav>
+        <ul class="nav-left">
+          <li> Estado: <span>estdo</span></li>
+          <li> Servidor: <span>estdo</span></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
