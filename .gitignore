@@ -4,7 +4,7 @@
 
 # Directorios generados por IDEs
 .idea/
-.vscode/
+.vscode
 
 # Archivos de construcción
 build/

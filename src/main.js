@@ -11,12 +11,12 @@ const createWindow = () => {
       height: 600,    
       webPreferences: {
     // Especifica el script de preload para configurar el entorno de ejecución del navegador
-      preload: path.join(__dirname, 'preload.js')
+      preload: path.join(__dirname, 'src/preload.js')
       }
     })
 
    // Carga el archivo 'index.html' en la ventana
-    win.loadFile('index.html')
+    win.loadFile('src/index.html')
   }
 // Ejecuta la función createWindow cuando la aplicación está lista
   app.whenReady().then(() => {
