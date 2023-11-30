@@ -1,6 +1,36 @@
 @charset "UTF-8";
 /*Contiene variables y configuraciones globales que afectan todo el proyecto. 
 Aquí se definen colores, tipografías, márgenes y otros valores que se utilizan en todo el proyecto.*/
+:root {
+  --color-primary: #F9FCFD;
+  --color-second: #E1F4FA;
+  --color-tertiary: #10858C;
+  --color-tertiary-dark: #0d5e63;
+  --color-grey:#D9D9D9; }
+
+:root {
+  --font-size-primary: 5vh;
+  --font-color-primary: #10858C; }
+
+.icon-1 {
+  width: 5vh;
+  margin: 5px; }
+
+.icon-2 {
+  width: 4vh;
+  margin: 5px; }
+
+.main-container {
+  display: flex; }
+  .main-container .container-registro {
+    width: 75%;
+    max-width: 75%;
+    min-width: 75%; }
+  .main-container .panel-left {
+    width: 25%;
+    max-width: 25%;
+    min-width: 25%; }
+
 /*Almacena funciones, mixins y otros elementos que no generan estilos por sí mismos, 
 pero proporcionan utilidades para su uso en capas posteriores.*/
 /*Contiene estilos globales y reseteos. Puedes incluir estilos para 
@@ -311,25 +341,202 @@ template {
 [hidden] {
   display: none; }
 
+* {
+  list-style: none;
+  text-decoration: none; }
+
+body {
+  /* Riel de la barra de desplazamiento */
+  /* Manija de la barra de desplazamiento (el área que puedes arrastrar) */
+  /* Pseudo-clase para la barra de desplazamiento cuando está en estado hover */ }
+  body ::-webkit-scrollbar {
+    width: 12px;
+    /* Ancho de la barra de desplazamiento */ }
+  body ::-webkit-scrollbar-track {
+    background-color: var(--color-grey); }
+  body ::-webkit-scrollbar-thumb {
+    background-color: var(--color-tertiary);
+    /** Color de la manija */
+    border-radius: 6px;
+    /* Radio de borde para un aspecto redondeado */ }
+    body ::-webkit-scrollbar-thumb:hover {
+      background-color: var(--color-tertiary-dark); }
+  body ::-webkit-scrollbar-thumb:hover {
+    background-color: 1;
+    /* Cambia el color al pasar el ratón sobre la manija */ }
+
 /*Aquí se colocan los estilos que afectan directamente a los elementos HTML. 
 No se incluyen estilos para clases específicas, sino estilos que se aplican a elementos sin clases.*/
+body {
+  background-color: var(--color-primary); }
+
+nav {
+  background-color: var(--color-second);
+  float: none;
+  display: flex;
+  justify-content: space-between; }
+  nav .nav-usuario-left {
+    display: flex;
+    color: var(--font-color-primary); }
+    nav .nav-usuario-left .usuario-name {
+      font-size: var(--font-size-primary);
+      margin: auto 1rem; }
+
+nav > div {
+  float: left;
+  margin: auto 2rem; }
+
 /*Se utiliza para incorporar clases y colocar todo lo relacionado con el diseño y 
 los patrones de diseño reutilizables. Pueden incluir contenedores y objetos de diseño.*/
+.main-subcontenedor-titulos {
+  width: 100%; }
+  .main-subcontenedor-titulos :first-child {
+    margin-top: 5px; }
+
+.container-registro {
+  height: 8vh;
+  width: 100%; }
+
+.product-tabs {
+  height: 60vh;
+  font-size: 1.5vw;
+  max-height: 50vh;
+  overflow-y: scroll;
+  border: solid 1px var(--color-tertiary);
+  padding: 2px;
+  margin-bottom: 1rem; }
+  .product-tabs tr:nth-child(2n+1) {
+    background-color: var(--color-second); }
+
+.main-subcontenedor-titulos {
+  width: 97.5%; }
+
+.product-tabs, .main-subcontenedor-titulos {
+  color: var(--font-color-primary); }
+  .product-tabs th, .main-subcontenedor-titulos th {
+    text-align: right;
+    max-width: 120px;
+    /* Establece un ancho máximo para el th */
+    white-space: nowrap;
+    /* Evita el desbordamiento del texto a la siguiente línea */
+    overflow: hidden;
+    /* Oculta el contenido que desborda */
+    text-overflow: ellipsis; }
+    .product-tabs th .moneda, .main-subcontenedor-titulos th .moneda {
+      margin: 0 5px;
+      float: left; }
+  .product-tabs th:nth-child(1), .main-subcontenedor-titulos th:nth-child(1) {
+    width: 80px;
+    text-align: left;
+    max-width: 80px; }
+  .product-tabs th:nth-child(2), .main-subcontenedor-titulos th:nth-child(2) {
+    width: 120px;
+    text-align: left; }
+  .product-tabs th:nth-child(3), .main-subcontenedor-titulos th:nth-child(3) {
+    width: 70px; }
+  .product-tabs th:nth-child(4), .main-subcontenedor-titulos th:nth-child(4) {
+    width: 50px;
+    text-align: center; }
+  .product-tabs th:nth-child(5), .main-subcontenedor-titulos th:nth-child(5) {
+    width: 70px; }
+  .product-tabs th:nth-child(6), .main-subcontenedor-titulos th:nth-child(6) {
+    width: 70px; }
+  .product-tabs th:nth-child(7), .main-subcontenedor-titulos th:nth-child(7) {
+    width: 2rem;
+    text-align: center; }
+    .product-tabs th:nth-child(7) img, .main-subcontenedor-titulos th:nth-child(7) img {
+      width: 2rem; }
+
+.main-subcontenedor-titulos {
+  width: 100%; }
+  .main-subcontenedor-titulos th:nth-child(1) {
+    text-align: left;
+    max-width: 60px; }
+  .main-subcontenedor-titulos th:nth-child(2) {
+    text-align: left;
+    max-width: 110px; }
+  .main-subcontenedor-titulos th:nth-child(3) {
+    text-align: left;
+    max-width: 50px; }
+  .main-subcontenedor-titulos th:nth-child(4) {
+    text-align: left;
+    max-width: 50px; }
+  .main-subcontenedor-titulos th:nth-child(5) {
+    text-align: left;
+    max-width: 60px; }
+  .main-subcontenedor-titulos th:nth-child(6) {
+    text-align: center;
+    max-width: 70px; }
+  .main-subcontenedor-titulos th:nth-child(7) {
+    text-align: center;
+    max-width: 2.5rem; }
+
+* .tab-container table {
+  width: 100%; }
+
+.container-facturas {
+  margin: 1rem 0 0.5rem 0; }
+
+/* Estilos para las pestañas individuales */
+.tab {
+  height: 50rem;
+  position: absolute;
+  display: contents; }
+
+.active-tab {
+  display: initial; }
+
+.desactive-tab {
+  display: none; }
+
+.container {
+  width: 95%;
+  margin: auto; }
+
+html {
+  width: 100%;
+  height: 100vh; }
+  html body {
+    width: 100%;
+    height: 100vh; }
+    html body nav {
+      height: 8vh; }
+    html body main {
+      height: 88vh; }
+      html body main section {
+        width: 100%; }
+      html body main aside {
+        width: 100%; }
+    html body footer {
+      background-color: var(--color-second); }
+      html body footer > div ul {
+        height: 4vh;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0; }
+
 /*Contiene estilos específicos para componentes UI. 
 Aquí van los estilos relacionados con bloques específicos del documento, 
 como navegadores, botones, cabeceras, buscadores, etc. Dependiendo de las 
 necesidades del proyecto, esta carpeta puede tener más o menos ajustes.*/
 /* components.scss */
+.btn-p, .btn-a {
+  height: 44px;
+  padding: 0 5px;
+  border-radius: 2px;
+  border: solid 1px var(--color-tertiary); }
+
+.btn-a {
+  background-color: var(--color-tertiary);
+  color: white; }
+
+.btn-p {
+  background-color: var(--color-second);
+  color: var(--color-tertiary); }
+
 /*Contiene utilidades que sobrescriben estilos significativos. 
 Esto podría incluir ajustes para solucionar problemas específicos o para manejar 
 incompatibilidades con navegadores.*/
-/* utilities.scss */
-.tab-content {
-  background-color: var(--tabs-lite-color);
-  padding: 20px;
-  border: var(--tabs-border-size) solid var(--tabs-border-color);
-  border-radius: 0 0 10px 10px;
-  position: relative;
-  z-index: 100; }
 
 /*# sourceMappingURL=style.css.map */

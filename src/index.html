@@ -8,84 +8,64 @@
     <title>Registro de Ventas</title>
   </head>
   <body>
-    <nav>
-      <div class="nav-perfil nav-left">
-        <span class="perfil-icon">icon</span>
-        <span class="perfil-name">Nombre</span>
+    <nav class="nav-usuario" >
+      <div class="nav-usuario-left">
+        <span class="usuario-icon"> <img class="icon-1" src="./public/img/icon/usuario.png" alt="user" /> </span>
+        <span class="usuario-name">Nombre</span>
       </div>
-      <div class="nav-perfil nav-right">
-        <span class="perfil-sesion">cerrar</span>
-        <span class="perfil-notificaction">notificacion</span>
+      <div class="nav-usuario-right">
+        <span class="usuario-sesion"><img class="icon-2" src="./public/img/icon/correo.png" alt="sesion" /> </span>
+        <span class="usuario-notificaction"><img class="icon-2" src="./public/img/icon/sesion.png" alt="notificaciones" /> </span>
       </div>
     </nav>
-    <main>
-      <section>
-        <div>
-          <input type="text">
+    <main class="main-container container">
+      <section class="main-container-registro">
+        <form class="from-product-code">
+          <input class="" type="text">
           <input type="submit" value="Agregar">
+        </form>
+        <div class="container-facturas">
+          <a class="btn-p" >1</a>
+          <a class="btn-p" >2</a>
+          <a class="btn-p" >3</a>
         </div>
-        <div>
-          <div class="tabs">
+        <div class="main-subcontenedor">
+          <table class="main-subcontenedor-titulos">
+            <tr>
+              <th>Id</th>
+              <th>Producto</th>
+              <th>Precio Uni</th>
+              <th>Can</th>
+              <th>Descuento</th>
+              <th>Total</th>
+              <th>Img</th>
+            </tr>
+        </table>
+          <div class="product-tabs">
             <div class="tab-container">
-              <div id="tab3" class="tab"> 
-                <a href="#tab3">Pestaña 3</a>
+
+              <div class="tab"> 
                 <div class="tab-content">
                   <table>
-                    <thead>
-                        <tr>
-                          <th>ID_Producto</th>
-                          <th>Nombre</th>
-                          <th>Precio Uni</th>
-                          <th>can</th>
-                          <th>Uni</th>
-                          <th>Descuento</th>
-                          <th>Total</th>
-                          <th>Img_Producto</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th>ID_Producto</th>
-                        <th>Nombre</th>
-                        <th>Precio Uni</th>
-                        <th>can</th>
-                        <th>Uni</th>
-                        <th>Descuento</th>
-                        <th>Total</th>
-                        <th><img src="" alt=""></th>
-                      </tr>
-                      <tr>
-                        <th>ID_Producto</th>
-                        <th>Nombre</th>
-                        <th>Precio Uni</th>
-                        <th>can</th>
-                        <th>Uni</th>
-                        <th>Descuento</th>
-                        <th>Total</th>
-                        <th><img src="" alt=""></th>
-                      </tr>
+                    <tbody  id="content-productos">
+                      <tr id="producto01">
+                        <th class="id">000000000000</th>
+                        <th title="Estes es un producto de 100ml" class="producto">Estes es un producto de 100ml </th>
+                        <th class="precio"><span class="moneda">$</span><span class="valor">999999999</span></th>
+                        <th class="cantidad">99999</th>
+                        <th class="descuento"><span class="moneda">$</span><span class="valor">99999999999</span></th>
+                        <th class="descuento"><span class="moneda">$</span> <span class="valor">99999999999</span></th>
+                        <th><img src="./public/img/Rectangle 88.png" alt=""></th>
+                    </tr>
                     </tbody>
                   </table>
                 </div>
               </div>
-              <div id="tab2" class="tab">
-                <a href="#tab2">Pestaña 2</a>
-                <div class="tab-content">
-                  <h2>Titulo 2</h2>
-                  <p>Lorem ipsum ...</p>
-                </div>
-              </div> 
-              <div id="tab1" class="tab">
-                <a href="#tab1">Pestaña 1</a>
-                <div class="tab-content">
-                  <h2>Titulo 1</h2>
-                  <p>Lorem ipsum ...</p>
-                </div> 
-              </div> 
+
             </div>
           </div>
         </div>
-        <div>
+        <div class="product-factura">
             <div>
               <button>Ultimas Ventas</button>
               <button>Imprimir Ultima Factura</button>
@@ -112,7 +92,7 @@
             </div>
         </div>
       </section>
-      <aside class="panel-left" style="overflow-y: auto; max-height: 300px;">
+      <aside class="panel-left">
         <div class="panel-left-categorias">
             <ul>
                 <li><button>Categoría 1</button></li>
@@ -129,16 +109,17 @@
                 <li><button>Producto 3</button></li>
             </ul>
         </div>
-    </aside>
+      </aside>
     
     </main>
     <footer>
-      <nav>
+      <div class="container">
         <ul class="nav-left">
           <li> Estado: <span>estdo</span></li>
           <li> Servidor: <span>estdo</span></li>
         </ul>
-      </nav>
+      </div>
     </footer>
+    <script src="./public/js/main.js"></script>
   </body>
 </html>

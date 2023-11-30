@@ -1,0 +1,16 @@
+
+.btn-p ,.btn-a{
+    height:44px;
+    padding: 0 5px;
+    border-radius:2px;
+    border:solid 1px var(--color-tertiary);
+}
+.btn-a{
+    background-color:var(--color-tertiary);
+    color:white;
+
+}
+.btn-p{
+    background-color:var(--color-second);
+    color:var(--color-tertiary);
+}
