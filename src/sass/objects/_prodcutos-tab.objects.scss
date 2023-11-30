@@ -78,5 +78,9 @@
     display: contents;
 }
 
-#tab1{display: none;}
-#tab2{display: none;}
+.active-tab{
+    display: initial;
+}
+.desactive-tab{
+    display: none;
+}

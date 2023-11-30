@@ -483,10 +483,10 @@ los patrones de diseño reutilizables. Pueden incluir contenedores y objetos de 
   position: absolute;
   display: contents; }
 
-#tab1 {
-  display: none; }
+.active-tab {
+  display: initial; }
 
-#tab2 {
+.desactive-tab {
   display: none; }
 
 .container {
