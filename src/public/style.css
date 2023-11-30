@@ -423,6 +423,7 @@ los patrones de diseño reutilizables. Pueden incluir contenedores y objetos de 
     /* Oculta el contenido que desborda */
     text-overflow: ellipsis; }
     .product-tabs th .moneda, .main-subcontenedor-titulos th .moneda {
+      margin: 0 5px;
       float: left; }
   .product-tabs th:nth-child(1), .main-subcontenedor-titulos th:nth-child(1) {
     width: 80px;
@@ -434,7 +435,7 @@ los patrones de diseño reutilizables. Pueden incluir contenedores y objetos de 
   .product-tabs th:nth-child(3), .main-subcontenedor-titulos th:nth-child(3) {
     width: 70px; }
   .product-tabs th:nth-child(4), .main-subcontenedor-titulos th:nth-child(4) {
-    width: 10px;
+    width: 50px;
     text-align: center; }
   .product-tabs th:nth-child(5), .main-subcontenedor-titulos th:nth-child(5) {
     width: 70px; }
@@ -446,12 +447,29 @@ los patrones de diseño reutilizables. Pueden incluir contenedores y objetos de 
     .product-tabs th:nth-child(7) img, .main-subcontenedor-titulos th:nth-child(7) img {
       width: 2rem; }
 
-.main-subcontenedor-titulos th:nth-child(3) {
-  text-align: left; }
-.main-subcontenedor-titulos th:nth-child(5) {
-  text-align: center; }
-.main-subcontenedor-titulos th:nth-child(6) {
-  text-align: center; }
+.main-subcontenedor-titulos {
+  width: 100%; }
+  .main-subcontenedor-titulos th:nth-child(1) {
+    text-align: left;
+    max-width: 60px; }
+  .main-subcontenedor-titulos th:nth-child(2) {
+    text-align: left;
+    max-width: 110px; }
+  .main-subcontenedor-titulos th:nth-child(3) {
+    text-align: left;
+    max-width: 50px; }
+  .main-subcontenedor-titulos th:nth-child(4) {
+    text-align: left;
+    max-width: 50px; }
+  .main-subcontenedor-titulos th:nth-child(5) {
+    text-align: left;
+    max-width: 60px; }
+  .main-subcontenedor-titulos th:nth-child(6) {
+    text-align: center;
+    max-width: 70px; }
+  .main-subcontenedor-titulos th:nth-child(7) {
+    text-align: center;
+    max-width: 2.5rem; }
 
 * .tab-container table {
   width: 100%; }
@@ -486,6 +504,8 @@ html {
     html body main {
       height: 88vh; }
       html body main section {
+        width: 100%; }
+      html body main aside {
         width: 100%; }
     html body footer {
       background-color: var(--color-second); }

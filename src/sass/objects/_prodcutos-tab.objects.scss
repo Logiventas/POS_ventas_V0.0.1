@@ -35,12 +35,10 @@
     th{
         text-align: right;
         .moneda{
+            margin: 0 5px ;
           float: left;
         }
-        .valor{
- 
-        }
-      
+
         max-width: 120px;      /* Establece un ancho máximo para el th */
         white-space: nowrap;  /* Evita el desbordamiento del texto a la siguiente línea */
         overflow: hidden;     /* Oculta el contenido que desborda */
@@ -49,16 +47,22 @@
     th:nth-child(1){width:80px; text-align: left; max-width: 80px;  }
     th:nth-child(2){width: 120px; text-align: left;}
     th:nth-child(3){width: 70px;}
-    th:nth-child(4){width: 10px; text-align: center;}
+    th:nth-child(4){width: 50px; text-align: center;}
     th:nth-child(5){width: 70px;}
     th:nth-child(6){width: 70px;}
     th:nth-child(7){width: 2rem;img{width: 2rem;} text-align: center;}
 }
 
 .main-subcontenedor-titulos{
-    th:nth-child(3){text-align: left;}
-    th:nth-child(5){text-align: center;}
-    th:nth-child(6){text-align: center;}
+    width: 100%;
+    th:nth-child(1){text-align: left; max-width: 60px;}
+    th:nth-child(2){text-align: left; max-width: 110px;}
+    th:nth-child(3){text-align: left; max-width: 50px;}
+    th:nth-child(4){text-align: left; max-width: 50px;}
+    th:nth-child(5){text-align: left; max-width: 60px;}
+    th:nth-child(6){text-align: center; max-width: 70px;}
+    th:nth-child(7){text-align: center; max-width: 2.5rem;}
+    
 }
 * .tab-container table{
     width: 100%;
