@@ -1,0 +1,11 @@
+/* utilities.scss */
+
+.tab-content {
+    background-color: var(--tabs-lite-color); 
+    padding: 20px;
+    border: var(--tabs-border-size) solid var(--tabs-border-color);
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    z-index: 100;
+  }
+  
