@@ -2,7 +2,7 @@
 /*Contiene variables y configuraciones globales que afectan todo el proyecto. 
 Aquí se definen colores, tipografías, márgenes y otros valores que se utilizan en todo el proyecto.*/
 :root {
-  --color-primary: #E1F4FA;
+  --color-primary: #F9FCFD;
   --color-second: #E1F4FA; }
 
 :root {
@@ -340,6 +340,9 @@ template {
 
 /*Aquí se colocan los estilos que afectan directamente a los elementos HTML. 
 No se incluyen estilos para clases específicas, sino estilos que se aplican a elementos sin clases.*/
+body {
+  backgrpud-color: var(--color-primary); }
+
 nav {
   background-color: var(--color-second);
   width: 100%;
