@@ -3,7 +3,8 @@
 Aquí se definen colores, tipografías, márgenes y otros valores que se utilizan en todo el proyecto.*/
 :root {
   --color-primary: #F9FCFD;
-  --color-second: #E1F4FA; }
+  --color-second: #E1F4FA;
+  --color-tertiary: #10858C; }
 
 :root {
   --font-size-primary: 32px;
@@ -338,6 +339,10 @@ template {
 [hidden] {
   display: none; }
 
+* {
+  list-style: none;
+  text-decoration: none; }
+
 /*Aquí se colocan los estilos que afectan directamente a los elementos HTML. 
 No se incluyen estilos para clases específicas, sino estilos que se aplican a elementos sin clases.*/
 body {
@@ -372,6 +377,20 @@ Aquí van los estilos relacionados con bloques específicos del documento,
 como navegadores, botones, cabeceras, buscadores, etc. Dependiendo de las 
 necesidades del proyecto, esta carpeta puede tener más o menos ajustes.*/
 /* components.scss */
+.btn-p, .btn-a {
+  height: 44px;
+  padding: 0 5px;
+  border-radius: 2px;
+  border: solid 1px var(--color-tertiary); }
+
+.btn-a {
+  background-color: var(--color-tertiary);
+  color: white; }
+
+.btn-p {
+  background-color: var(--color-second);
+  color: var(--color-tertiary); }
+
 /*Contiene utilidades que sobrescriben estilos significativos. 
 Esto podría incluir ajustes para solucionar problemas específicos o para manejar 
 incompatibilidades con navegadores.*/
