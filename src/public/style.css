@@ -17,6 +17,17 @@ Aquí se definen colores, tipografías, márgenes y otros valores que se utiliza
   width: 30px;
   margin: 5px; }
 
+.main-container {
+  display: flex; }
+  .main-container .container-registro {
+    width: 75%;
+    max-width: 75%;
+    min-width: 75%; }
+  .main-container .panel-left {
+    width: 25%;
+    max-width: 25%;
+    min-width: 25%; }
+
 /*Almacena funciones, mixins y otros elementos que no generan estilos por sí mismos, 
 pero proporcionan utilidades para su uso en capas posteriores.*/
 /*Contiene estilos globales y reseteos. Puedes incluir estilos para 
@@ -349,6 +360,10 @@ nav > div {
 
 /*Se utiliza para incorporar clases y colocar todo lo relacionado con el diseño y 
 los patrones de diseño reutilizables. Pueden incluir contenedores y objetos de diseño.*/
+.container {
+  width: 95%;
+  margin: auto; }
+
 /*Contiene estilos específicos para componentes UI. 
 Aquí van los estilos relacionados con bloques específicos del documento, 
 como navegadores, botones, cabeceras, buscadores, etc. Dependiendo de las 
