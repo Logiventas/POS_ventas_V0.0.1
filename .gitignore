@@ -1,6 +1,8 @@
 # Archivos temporales o creados por el sistema
 *~
 .DS_Store
+# archivos chache de sass
+.sass-cache/
 
 # Directorios generados por IDEs
 .idea/
