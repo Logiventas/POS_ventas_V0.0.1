@@ -1,0 +1,10 @@
+.container-registro{
+    height:100%;
+}
+
+.tab-container{
+    position:relative;
+    & >div {
+        position:absolute;
+    }
+}

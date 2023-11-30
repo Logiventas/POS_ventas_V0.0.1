@@ -350,8 +350,6 @@ body {
 
 nav {
   background-color: var(--color-second);
-  width: 100%;
-  height: 60px;
   float: none;
   display: flex;
   justify-content: space-between; }
@@ -368,9 +366,36 @@ nav > div {
 
 /*Se utiliza para incorporar clases y colocar todo lo relacionado con el diseño y 
 los patrones de diseño reutilizables. Pueden incluir contenedores y objetos de diseño.*/
+.container-registro {
+  height: 100%; }
+
+.tab-container {
+  position: relative; }
+  .tab-container > div {
+    position: absolute; }
+
 .container {
   width: 95%;
   margin: auto; }
+
+html {
+  width: 100%;
+  height: 100vh; }
+  html body {
+    width: 100%;
+    height: 100vh; }
+    html body nav {
+      height: 8vh; }
+    html body main {
+      height: 88vh; }
+    html body footer {
+      background-color: var(--color-second); }
+      html body footer > div ul {
+        height: 4vh;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0; }
 
 /*Contiene estilos específicos para componentes UI. 
 Aquí van los estilos relacionados con bloques específicos del documento, 

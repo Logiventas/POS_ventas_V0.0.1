@@ -1,0 +1,33 @@
+html{
+    width: 100%;
+    height:100vh;
+   & body{
+    width: 100%;
+    height:100vh;
+    & nav{
+            height:8vh;
+        }
+    & main{
+            height: 88vh;
+            & section{
+                
+            }
+            & aside{
+
+            }
+        }
+    &  footer {
+        background-color:var(--color-second);
+        & > div ul {
+       
+            height: 4vh;
+            display:flex;
+            justify-content:space-between;
+            margin:0;
+            padding:0;
+        }
+    }
+
+    }
+}
+
