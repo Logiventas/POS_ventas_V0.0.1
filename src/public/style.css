@@ -1,6 +1,22 @@
 @charset "UTF-8";
 /*Contiene variables y configuraciones globales que afectan todo el proyecto. 
 Aquí se definen colores, tipografías, márgenes y otros valores que se utilizan en todo el proyecto.*/
+:root {
+  --color-primary: #E1F4FA;
+  --color-second: #E1F4FA; }
+
+:root {
+  --font-size-primary: 32px;
+  --font-color-primary: #10858C; }
+
+.icon-1 {
+  width: 40px;
+  margin: 5px; }
+
+.icon-2 {
+  width: 30px;
+  margin: 5px; }
+
 /*Almacena funciones, mixins y otros elementos que no generan estilos por sí mismos, 
 pero proporcionan utilidades para su uso en capas posteriores.*/
 /*Contiene estilos globales y reseteos. Puedes incluir estilos para 
@@ -313,6 +329,24 @@ template {
 
 /*Aquí se colocan los estilos que afectan directamente a los elementos HTML. 
 No se incluyen estilos para clases específicas, sino estilos que se aplican a elementos sin clases.*/
+nav {
+  background-color: var(--color-second);
+  width: 100%;
+  height: 60px;
+  float: none;
+  display: flex;
+  justify-content: space-between; }
+  nav .nav-usuario-left {
+    display: flex;
+    color: var(--font-color-primary); }
+    nav .nav-usuario-left .usuario-name {
+      font-size: var(--font-size-primary);
+      margin: auto 1rem; }
+
+nav > div {
+  float: left;
+  margin: auto 2rem; }
+
 /*Se utiliza para incorporar clases y colocar todo lo relacionado con el diseño y 
 los patrones de diseño reutilizables. Pueden incluir contenedores y objetos de diseño.*/
 /*Contiene estilos específicos para componentes UI. 
