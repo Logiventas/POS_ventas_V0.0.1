@@ -1,10 +1,78 @@
-.container-registro{
-    height:100%;
-}
+.main-subcontenedor-titulos{
+    width: 100%;
 
-.tab-container{
-    position:relative;
-    & >div {
-        position:absolute;
+    & :first-child{
+        margin-top: 5px;
     }
 }
+.container-registro{
+    height:8vh;
+    width: 100%;
+
+}
+.product-tabs {
+    height: 60vh;
+    font-size: 1.5vw;
+    max-height: 50vh;
+    overflow-y: scroll; 
+    border: solid 1px var(--color-tertiary);
+    padding: 2px;
+    margin-bottom: 1rem;
+    tr:nth-child(2n+1){
+        background-color: var(--color-second);
+
+    }
+
+  
+
+
+}
+.main-subcontenedor-titulos{
+    width: 97.5%;
+}
+.product-tabs ,.main-subcontenedor-titulos{
+    color: var(--font-color-primary);
+    th{
+        text-align: right;
+        .moneda{
+          float: left;
+        }
+        .valor{
+ 
+        }
+      
+        max-width: 120px;      /* Establece un ancho máximo para el th */
+        white-space: nowrap;  /* Evita el desbordamiento del texto a la siguiente línea */
+        overflow: hidden;     /* Oculta el contenido que desborda */
+        text-overflow: ellipsis; 
+    }
+    th:nth-child(1){width:80px; text-align: left; max-width: 80px;  }
+    th:nth-child(2){width: 120px; text-align: left;}
+    th:nth-child(3){width: 70px;}
+    th:nth-child(4){width: 10px; text-align: center;}
+    th:nth-child(5){width: 70px;}
+    th:nth-child(6){width: 70px;}
+    th:nth-child(7){width: 2rem;img{width: 2rem;} text-align: center;}
+}
+
+.main-subcontenedor-titulos{
+    th:nth-child(3){text-align: left;}
+    th:nth-child(5){text-align: center;}
+    th:nth-child(6){text-align: center;}
+}
+* .tab-container table{
+    width: 100%;
+}
+.container-facturas{
+    margin: 1rem 0 0.5rem 0;
+}
+
+/* Estilos para las pestañas individuales */
+.tab{
+    height: 50rem;
+    position: absolute;
+    display: contents;
+}
+
+#tab1{display: none;}
+#tab2{display: none;}
