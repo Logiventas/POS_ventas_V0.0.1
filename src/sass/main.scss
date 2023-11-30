@@ -1,0 +1,48 @@
+//------------------->>>> Arquitectura De Triángulo Invertido Para CSS (ITCSS) <<<<------------------------
+
+// 1. SETTINGS
+
+/*Contiene variables y configuraciones globales que afectan todo el proyecto. 
+Aquí se definen colores, tipografías, márgenes y otros valores que se utilizan en todo el proyecto.*/
+@import '../sass/imports/settings.imports.scss';
+
+// 2. TOOLS
+
+/*Almacena funciones, mixins y otros elementos que no generan estilos por sí mismos, 
+pero proporcionan utilidades para su uso en capas posteriores.*/
+@import '../sass/imports/tools.imports.scss';
+
+// 3. GENERIC
+
+/*Contiene estilos globales y reseteos. Puedes incluir estilos para 
+elementos HTML (body, p, h1, etc.) y también archivos como Normalize.css. 
+Son estilos que no dependen de clases o IDs específicos.*/
+@import '../sass/imports/generic.imports';
+
+// 4. ELEMENTS
+
+/*Aquí se colocan los estilos que afectan directamente a los elementos HTML. 
+No se incluyen estilos para clases específicas, sino estilos que se aplican a elementos sin clases.*/
+@import '../sass/imports/elements.imports';
+
+// 5. OBJECTS
+
+/*Se utiliza para incorporar clases y colocar todo lo relacionado con el diseño y 
+los patrones de diseño reutilizables. Pueden incluir contenedores y objetos de diseño.*/
+@import '../sass/imports/objects.imports';
+
+// 6. COMPONENTS
+
+/*Contiene estilos específicos para componentes UI. 
+Aquí van los estilos relacionados con bloques específicos del documento, 
+como navegadores, botones, cabeceras, buscadores, etc. Dependiendo de las 
+necesidades del proyecto, esta carpeta puede tener más o menos ajustes.*/
+@import '../sass/imports/components.imports';
+
+// 7. UTILITIES
+
+/*Contiene utilidades que sobrescriben estilos significativos. 
+Esto podría incluir ajustes para solucionar problemas específicos o para manejar 
+incompatibilidades con navegadores.*/
+
+@import '../sass/imports/utilities.imports';
