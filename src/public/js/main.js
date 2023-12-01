@@ -31,9 +31,14 @@ function agregarProducto(id,producto,precio,cantidad,descuento){
      <th class="cantidad">${cantidad}</th>
      <th class="descuento"><span class="moneda">$</span> <span class="valor">${descuento}</span></th>
      <th class="total"><span class="moneda">$</span> <span class="valor">${(precio*cantidad)-descuento}</span></th>
-     <th><img src="./public/img/Rectangle 88.png" alt=""></th>
+     <th><img src="../public/img/Rectangle 88.png" alt=""></th>
  `;
 
  // Agregar la nueva fila al contenedor
  contenedorFacturas.appendChild(nuevaFila);
+}
+
+function eliminarProducto(id){
+    const fila = document.getElementById(id);
+    fila.remove();
 }
