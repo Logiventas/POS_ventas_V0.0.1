@@ -6,7 +6,9 @@ Aquí se definen colores, tipografías, márgenes y otros valores que se utiliza
   --color-second: #E1F4FA;
   --color-tertiary: #10858C;
   --color-tertiary-dark: #0d5e63;
-  --color-grey:#D9D9D9; }
+  --color-grey:#D9D9D9;
+  --color-red:#8C1010;
+  --color-red-dark:#6e0707; }
 
 :root {
   --font-size-primary: 5vh;
@@ -581,6 +583,19 @@ html {
     .panel-left-productos li div {
       width: 100%; }
 
+.product-datos-factura_finales {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: end; }
+  .product-datos-factura_finales .valores {
+    text-align: right; }
+    .product-datos-factura_finales .valores .modena {
+      margin: 0 5px; }
+  .product-datos-factura_finales .total {
+    font-weight: 600;
+    font-size: 2vw; }
+
 /*Contiene estilos específicos para componentes UI. 
 Aquí van los estilos relacionados con bloques específicos del documento, 
 como navegadores, botones, cabeceras, buscadores, etc. Dependiendo de las 
@@ -594,11 +609,50 @@ necesidades del proyecto, esta carpeta puede tener más o menos ajustes.*/
 
 .btn-a {
   background-color: var(--color-tertiary);
-  color: white; }
+  color: white;
+  height: 44px; }
 
 .btn-p {
   background-color: var(--color-second);
   color: var(--color-tertiary); }
+
+.btn-1 {
+  border-radius: 5px;
+  height: 4vh;
+  padding: 0 15px;
+  background-color: var(--color-tertiary);
+  border: none;
+  cursor: pointer;
+  color: white; }
+  .btn-1:hover {
+    background-color: var(--color-tertiary-dark); }
+
+.btn-2-r {
+  margin: 0 10px;
+  width: 18vw;
+  height: 8vh;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin-bottom: 3px;
+  background-color: var(--color-red); }
+  .btn-2-r:hover {
+    background-color: var(--color-red-dark); }
+
+.btn-2-g {
+  margin: 0 10px;
+  width: 18vw;
+  padding: 15px 0;
+  height: 8vh;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin-bottom: 3px;
+  background-color: var(--color-tertiary); }
+  .btn-2-g:hover {
+    background-color: var(--color-tertiary-dark); }
 
 /*Contiene utilidades que sobrescriben estilos significativos. 
 Esto podría incluir ajustes para solucionar problemas específicos o para manejar 

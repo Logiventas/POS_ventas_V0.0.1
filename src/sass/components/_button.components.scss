@@ -8,9 +8,50 @@
 .btn-a{
     background-color:var(--color-tertiary);
     color:white;
-
+    height:44px;
 }
 .btn-p{
     background-color:var(--color-second);
     color:var(--color-tertiary);
+}
+.btn-1{
+    border-radius: 5px;
+    height: 4vh;
+    padding: 0 15px ;
+    background-color:var(--color-tertiary);
+    border: none;
+    cursor: pointer;
+    color: white;
+    &:hover{
+        background-color:var(--color-tertiary-dark);
+    }
+}
+.btn-2-r{
+    margin: 0 10px;
+    width: 18vw;
+    height: 8vh;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 3px;
+    background-color: var(--color-red);
+    &:hover{
+        background-color:var(--color-red-dark);
+    }
+}
+.btn-2-g{
+    margin: 0 10px;
+    width: 18vw;
+    padding: 15px 0;
+    height: 8vh;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 3px;
+    background-color:var(--color-tertiary);
+    &:hover{
+        background-color:var(--color-tertiary-dark);
+    }
 }
