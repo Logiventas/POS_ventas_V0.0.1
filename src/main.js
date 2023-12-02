@@ -11,6 +11,7 @@ const createWindow = () => {
       height: 600,
       minWidth: 800, 
       minHeight: 600, 
+      icon:'icon.png',
       webPreferences: {
     // Especifica el script de preload para configurar el entorno de ejecución del navegador
         preload: path.join(__dirname, 'src/preload.js')
