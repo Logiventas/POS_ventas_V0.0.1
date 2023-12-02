@@ -42,3 +42,12 @@ function eliminarProducto(id){
     const fila = document.getElementById(id);
     fila.remove();
 }
+
+function toggleImagen(boton) {
+    // Cambia el atributo 'data-visible' del botón entre "true" y "false"
+    var visible = boton.getAttribute('data-visible') === 'true';
+    boton.setAttribute('data-visible', !visible);
+
+    // Agrega o quita la clase 'visible' al botón
+    boton.classList.toggle('visible', !visible);
+  }

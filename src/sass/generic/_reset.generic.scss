@@ -1,6 +1,8 @@
 *{
     list-style:none;
     text-decoration:none;
+    user-select: none;
+    color: var(--color-tertiary-dark);
 }
 body{
   & ::-webkit-scrollbar {

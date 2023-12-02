@@ -343,7 +343,9 @@ template {
 
 * {
   list-style: none;
-  text-decoration: none; }
+  text-decoration: none;
+  user-select: none;
+  color: var(--color-tertiary-dark); }
 
 body {
   /* Riel de la barra de desplazamiento */
@@ -506,7 +508,8 @@ html {
       html body main section {
         width: 100%; }
       html body main aside {
-        width: 100%; }
+        width: 100%;
+        padding: 5px; }
     html body footer {
       background-color: var(--color-second); }
       html body footer > div ul {
@@ -515,6 +518,68 @@ html {
         justify-content: space-between;
         margin: 0;
         padding: 0; }
+
+.panel-left h5 {
+  margin: 0 5px; }
+
+.panel-left-productos, .panel-left-categorias {
+  margin: 5px;
+  overflow-y: auto;
+  overflow-x: hidden; }
+  .panel-left-productos ul, .panel-left-categorias ul {
+    padding: 0;
+    margin: 0; }
+  .panel-left-productos .item-categoria, .panel-left-productos .item-producto, .panel-left-categorias .item-categoria, .panel-left-categorias .item-producto {
+    cursor: pointer; }
+
+.panel-left-categorias {
+  max-height: 30vh; }
+  .panel-left-categorias li {
+    margin: 2px;
+    width: 100%;
+    background-color: var(--color-second);
+    border-bottom: solid 1px var(--color-tertiary);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; }
+
+.panel-left-productos {
+  font-size: 2vh;
+  font-weight: 600;
+  max-height: 30vh; }
+  .panel-left-productos .item-producto {
+    height: 15vh;
+    margin: 2px; }
+    .panel-left-productos .item-producto input {
+      background-color: var(--color-tertiary);
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin: 1px; }
+      .panel-left-productos .item-producto input:hover {
+        background-color: var(--color-tertiary-dark); }
+    .panel-left-productos .item-producto .imagen img {
+      width: 100%; }
+    .panel-left-productos .item-producto .imagen img:hover {
+      width: 200%; }
+      .panel-left-productos .item-producto .imagen img:hover .panel-left-productos .item-producto .imagen img:hover + div {
+        display: none;
+        background-color: red; }
+    .panel-left-productos .item-producto .descripcion {
+      margin: 5px; }
+  .panel-left-productos li {
+    width: 100%;
+    background-color: var(--color-second);
+    border-bottom: solid 1px var(--color-tertiary);
+    padding: 0;
+    display: flex;
+    justify-content: space-between; }
+    .panel-left-productos li p, .panel-left-productos li h4 {
+      margin: 0; }
+    .panel-left-productos li p {
+      padding: 5px 0; }
+    .panel-left-productos li div {
+      width: 100%; }
 
 /*Contiene estilos específicos para componentes UI. 
 Aquí van los estilos relacionados con bloques específicos del documento, 
