@@ -25,10 +25,6 @@ const createWindow = () => {
     win.removeMenu();
   }
 
-  // Ocultar la barra de menú
-
-
-
 // Ejecuta la función createWindow cuando la aplicación está lista
   app.whenReady().then(() => {
     createWindow()
