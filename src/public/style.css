@@ -392,6 +392,23 @@ nav > div {
 
 /*Se utiliza para incorporar clases y colocar todo lo relacionado con el diseño y 
 los patrones de diseño reutilizables. Pueden incluir contenedores y objetos de diseño.*/
+.from-product-code {
+  margin: 10px 0; }
+  .from-product-code input[type="text"] {
+    padding: 2px 5px;
+    height: 3vh;
+    background-color: var(--color-grey);
+    border: solid 1px transparent;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px; }
+    .from-product-code input[type="text"]:focus {
+      outline: none;
+      border: solid 1px var(--color-tertiary);
+      /* Cambié "solid 1px" a "1px solid" para seguir la convención común */ }
+
 .main-subcontenedor-titulos {
   width: 100%; }
   .main-subcontenedor-titulos :first-child {
