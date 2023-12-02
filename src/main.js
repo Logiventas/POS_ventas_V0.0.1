@@ -18,9 +18,17 @@ const createWindow = () => {
       }
     })
 
-   // Carga el archivo 'index.html' en la ventana
-    win.loadFile('src/views/index.html')
+    // Carga el archivo 'index.html' en la ventana
+    win.loadFile('src/views/index.html');
+
+    // Oculta la barra de menú
+    win.removeMenu();
   }
+
+  // Ocultar la barra de menú
+
+
+
 // Ejecuta la función createWindow cuando la aplicación está lista
   app.whenReady().then(() => {
     createWindow()
